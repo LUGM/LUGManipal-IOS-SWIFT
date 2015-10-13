@@ -22,17 +22,33 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 		// Dispose of any resources that can be recreated.
 	}
 	
+//-------------------------------------------------------------------------------------------------------------------------------
+//	Table view data source
+	
 	func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-		return 1
+		return 4
 	}
 	
 	func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return 1
+		return (section + 1)
 	}
 	
 	func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCellWithIdentifier("defaultCell", forIndexPath: indexPath)
+		cell.textLabel?.text = "Row \(indexPath.row + 1)"
+		cell.detailTextLabel?.text = "Section \(indexPath.section + 1)"
 		return cell
+	}
+	
+	func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+		return "Section \(section + 1)"
+	}
+	
+//-------------------------------------------------------------------------------------------------------------------------------
+//	Table view delegate
+	
+	func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+		tableView.deselectRowAtIndexPath(indexPath, animated: true)
 	}
 	
 }
