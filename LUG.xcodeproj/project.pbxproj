@@ -56,15 +56,47 @@
 		59F423421BCCDC1A00C2A56F /* LUG */ = {
 			isa = PBXGroup;
 			children = (
-				59F423431BCCDC1A00C2A56F /* AppDelegate.swift */,
-				59F423451BCCDC1A00C2A56F /* ViewController.swift */,
-				59F423471BCCDC1A00C2A56F /* Main.storyboard */,
 				59F4234D1BCCDC1A00C2A56F /* Assets.xcassets */,
+				59F4235A1BCCDC4A00C2A56F /* App Delegate */,
+				59F423581BCCDC2800C2A56F /* Views */,
+				59F423591BCCDC3B00C2A56F /* Controllers */,
+				59F4235B1BCCDC5600C2A56F /* Other */,
+			);
+			path = LUG;
+			sourceTree = "<group>";
+		};
+		59F423581BCCDC2800C2A56F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				59F423471BCCDC1A00C2A56F /* Main.storyboard */,
 				59F4234F1BCCDC1A00C2A56F /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		59F423591BCCDC3B00C2A56F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				59F423451BCCDC1A00C2A56F /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		59F4235A1BCCDC4A00C2A56F /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				59F423431BCCDC1A00C2A56F /* AppDelegate.swift */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		59F4235B1BCCDC5600C2A56F /* Other */ = {
+			isa = PBXGroup;
+			children = (
 				59F423521BCCDC1A00C2A56F /* Info.plist */,
 				59F4234A1BCCDC1A00C2A56F /* LUG.xcdatamodeld */,
 			);
-			path = LUG;
+			name = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +283,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LUG/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lugmanipal.LUG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -262,6 +295,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LUG/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lugmanipal.LUG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
