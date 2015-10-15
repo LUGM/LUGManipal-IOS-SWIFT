@@ -46,6 +46,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 			application.registerForRemoteNotifications()
 		}
 		
+		// Set appearance properties
+		
+		UINavigationBar.appearance().backgroundColor = AppDelegate.globalBackColor();
+		UINavigationBar.appearance().barTintColor = AppDelegate.globalBackColor();
+		UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: AppDelegate.globalTintColor()];
+		
 		return true
 	}
 	
@@ -93,6 +99,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 		// Saves changes in the application's managed object context before the application terminates.
 		self.saveContext()
+	}
+	
+	// MARK: - Class functions
+	
+	internal static func colorFromRGBA(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) -> UIColor {
+		return UIColor.init(red: red/255, green: green/255, blue: blue/255, alpha: alpha);
+	}
+	
+	internal static func globalTintColor() -> UIColor {
+		return AppDelegate.colorFromRGBA(58, green: 80, blue: 105, alpha: 1);
+	}
+	
+	internal static func globalBackColor() -> UIColor {
+		return AppDelegate.colorFromRGBA(252, green: 249, blue: 238, alpha: 1);
 	}
 
 	// MARK: - Core Data stack

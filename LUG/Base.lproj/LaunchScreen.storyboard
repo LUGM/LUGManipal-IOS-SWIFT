@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -17,26 +18,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Erw-dZ-W5I">
-                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qUa-iz-4Q7">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                <subviews>
+                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uaV-jJ-Uqy">
+                                        <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                        <animations/>
+                                        <color key="barTintColor" red="0.98823529409999999" green="0.97647058819999999" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <textAttributes key="titleTextAttributes">
+                                            <color key="textColor" red="0.2274509804" green="0.31372549020000001" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </textAttributes>
+                                        <items>
+                                            <navigationItem title="LUG Manipal" id="Toa-90-9rf"/>
+                                        </items>
+                                    </navigationBar>
+                                </subviews>
                                 <animations/>
-                                <items>
-                                    <navigationItem title="LUG" id="ENJ-MU-3Ul"/>
-                                </items>
-                            </navigationBar>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Linux" translatesAutoresizingMaskIntoConstraints="NO" id="4a2-ws-O3w">
-                                <rect key="frame" x="180" y="180" width="240" height="240"/>
-                                <animations/>
-                            </imageView>
+                                <color key="backgroundColor" red="0.9882352941176471" green="0.97647058823529409" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="uaV-jJ-Uqy" secondAttribute="trailing" id="4YB-lc-hQB"/>
+                                    <constraint firstAttribute="bottom" secondItem="uaV-jJ-Uqy" secondAttribute="bottom" id="mdG-rJ-bwf"/>
+                                    <constraint firstItem="uaV-jJ-Uqy" firstAttribute="leading" secondItem="qUa-iz-4Q7" secondAttribute="leading" id="yPb-fp-RyV"/>
+                                    <constraint firstAttribute="height" constant="64" id="ywU-GO-SMc"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.98823529409999999" green="0.97647058819999999" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="Erw-dZ-W5I" secondAttribute="trailing" constant="-20" id="HlV-ek-eTz"/>
-                            <constraint firstItem="Erw-dZ-W5I" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="IrN-yx-5Du"/>
-                            <constraint firstItem="4a2-ws-O3w" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="VPq-vs-k8o"/>
-                            <constraint firstItem="4a2-ws-O3w" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="p8u-Zu-2nf"/>
-                            <constraint firstItem="Erw-dZ-W5I" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="xmx-Sr-wtw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qUa-iz-4Q7" secondAttribute="trailing" constant="-20" id="3Uc-Vt-5AV"/>
+                            <constraint firstItem="qUa-iz-4Q7" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="Pex-3z-ogh"/>
+                            <constraint firstItem="qUa-iz-4Q7" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="-20" id="WzE-2a-ZNM"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -45,7 +57,4 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Linux" width="240" height="240"/>
-    </resources>
 </document>
