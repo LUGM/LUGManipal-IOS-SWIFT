@@ -21,6 +21,8 @@
 		59C721941BCD5C4E00CFFD9C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C721931BCD5C4E00CFFD9C /* libsqlite3.tbd */; };
 		59C721981BCD5D4E00CFFD9C /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C721961BCD5D4E00CFFD9C /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
 		59C721991BCD5D4E00CFFD9C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C721971BCD5D4E00CFFD9C /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
+		59CE05E31BD2054900F5FDA5 /* NotificationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CE05E21BD2054900F5FDA5 /* NotificationsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		59CE05E51BD2086E00F5FDA5 /* SwiftNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CE05E41BD2086E00F5FDA5 /* SwiftNotice.swift */; settings = {ASSET_TAGS = (); }; };
 		59F29FE61BCEC46E0037591F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F29FE51BCEC46E0037591F /* TableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		59F29FE81BCEC97A0037591F /* floyd.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 59F29FE71BCEC97A0037591F /* floyd.TTF */; settings = {ASSET_TAGS = (); }; };
 		59F423441BCCDC1A00C2A56F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F423431BCCDC1A00C2A56F /* AppDelegate.swift */; };
@@ -45,6 +47,8 @@
 		59C721931BCD5C4E00CFFD9C /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		59C721961BCD5D4E00CFFD9C /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		59C721971BCD5D4E00CFFD9C /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		59CE05E21BD2054900F5FDA5 /* NotificationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsTableViewController.swift; sourceTree = "<group>"; };
+		59CE05E41BD2086E00F5FDA5 /* SwiftNotice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftNotice.swift; sourceTree = "<group>"; };
 		59F29FE51BCEC46E0037591F /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		59F29FE71BCEC97A0037591F /* floyd.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = floyd.TTF; sourceTree = "<group>"; };
 		59F423401BCCDC1A00C2A56F /* LUG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LUG.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +104,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		59CE05E61BD2087200F5FDA5 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				59CE05E41BD2086E00F5FDA5 /* SwiftNotice.swift */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
 		59F423371BCCDC1A00C2A56F = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +136,7 @@
 				59F4235A1BCCDC4A00C2A56F /* App Delegate */,
 				59F423581BCCDC2800C2A56F /* Views */,
 				59F423591BCCDC3B00C2A56F /* Controllers */,
+				59CE05E61BD2087200F5FDA5 /* Libraries */,
 				59F4235B1BCCDC5600C2A56F /* Other */,
 			);
 			path = LUG;
@@ -143,6 +156,7 @@
 			children = (
 				59F29FE51BCEC46E0037591F /* TableViewController.swift */,
 				5919662F1BCFE20D0088FA04 /* WebViewController.swift */,
+				59CE05E21BD2054900F5FDA5 /* NotificationsTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -238,7 +252,9 @@
 			files = (
 				59F4234C1BCCDC1A00C2A56F /* LUG.xcdatamodeld in Sources */,
 				59F29FE61BCEC46E0037591F /* TableViewController.swift in Sources */,
+				59CE05E31BD2054900F5FDA5 /* NotificationsTableViewController.swift in Sources */,
 				59F423441BCCDC1A00C2A56F /* AppDelegate.swift in Sources */,
+				59CE05E51BD2086E00F5FDA5 /* SwiftNotice.swift in Sources */,
 				591966301BCFE20D0088FA04 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

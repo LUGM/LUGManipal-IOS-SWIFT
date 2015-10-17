@@ -18,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 		// Override point for customization after application launch.
 		
+//		Parse.enableLocalDatastore()
+		
 		Parse.setApplicationId("wPBqAPFLBuSms7zJ5z3d3xWjV5VBMCXQNwpBaJRO", clientKey: "4GjHWzJlDMNp8s2yvP8U5PCjkhVNIMrV6QfI8S1O")
 		
 		// Register for Push Notitications

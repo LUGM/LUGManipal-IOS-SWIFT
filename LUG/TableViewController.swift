@@ -9,7 +9,7 @@
 import UIKit
 import MessageUI
 
-class TableViewController: UITableViewController {
+class TableViewController: UITableViewController, UINavigationControllerDelegate, MFMailComposeViewControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +24,7 @@ class TableViewController: UITableViewController {
 	// MARK: - Table view delegate
 	
 	override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-		if (indexPath.section == 2) {
+		if (indexPath.section == 3) {
 			var url: NSString;
 			var title: NSString;
 			switch (indexPath.row) {
@@ -51,14 +51,33 @@ class TableViewController: UITableViewController {
 			wvc.passedURL = url
 			self.navigationController?.pushViewController(wvc, animated: true)
 		}
-		if (indexPath.section == 3) {
+		if (indexPath.section == 4) {
+			if (indexPath.row == 0) {
+				// Core committee
+			}
 			if (indexPath.row == 1) {
-				
+				// Mailing list
+				if (MFMailComposeViewController.canSendMail()) {
+					let mailVC : MFMailComposeViewController = MFMailComposeViewController()
+					mailVC.mailComposeDelegate = self
+					mailVC.setSubject("To LUG Manipal")
+					mailVC.setToRecipients(["discussion@lists.lugmanipal.org"])
+					mailVC.setMessageBody("\n\nLinux is Love, Linux is Life. (Unless you have a Mac, in that case, screw Linux.)\n\n", isHTML: false)
+					mailVC.modalPresentationStyle = .PageSheet
+					self.presentViewController(mailVC, animated: true, completion: { () -> Void in
+						
+					});
+				}
 			}
 		}
 		tableView.deselectRowAtIndexPath(indexPath, animated: true)
 	}
 
+	func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
+		self.dismissViewControllerAnimated(true) { () -> Void in
+		}
+	}
+	
     // MARK: - Navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 		if (segue.identifier!.isEqual("visitWebsiteSeue")) {

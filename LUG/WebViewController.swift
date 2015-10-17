@@ -68,31 +68,7 @@ class WebViewController: UIViewController, WKNavigationDelegate {
 		webView.removeObserver(self, forKeyPath: "estimatedProgress", context: nil)
 	}
 	
-	override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
-		if (keyPath == "loading") {
-			backButton.enabled = webView.canGoBack
-			forwardButton.enabled = webView.canGoForward
-		}
-		if (keyPath == "estimatedProgress") {
-			progressView.hidden = webView.estimatedProgress == 1
-			progressView.setProgress(Float(webView.estimatedProgress), animated: true)
-		}
-	}
-	
-	func webView(webView: WKWebView, didFinishNavigation navigation: WKNavigation!) {
-		progressView.setProgress(0.0, animated: false)
-	}
-	
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
-		// Dispose of any resources that can be recreated.
-	}
-	
-	func webView(webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: NSError) {
-		let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .Alert)
-		alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
-		presentViewController(alert, animated: true, completion: nil)
-	}
+	// MARK: - Actions
 	
 	@IBAction func backAction(sender: AnyObject) {
 		webView.goBack();
@@ -116,15 +92,29 @@ class WebViewController: UIViewController, WKNavigationDelegate {
 		self.navigationItem.title = title as String
 	}
 	
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+	// MARK: - KVO
+	
+	override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
+		if (keyPath == "loading") {
+			backButton.enabled = webView.canGoBack
+			forwardButton.enabled = webView.canGoForward
+		}
+		if (keyPath == "estimatedProgress") {
+			progressView.hidden = webView.estimatedProgress == 1
+			progressView.setProgress(Float(webView.estimatedProgress), animated: true)
+		}
+	}
+	
+	// MARK: - WKNavigationDelegate
+	
+	func webView(webView: WKWebView, didFinishNavigation navigation: WKNavigation!) {
+		progressView.setProgress(0.0, animated: false)
+	}
+	
+	func webView(webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: NSError) {
+		let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .Alert)
+		alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
+		presentViewController(alert, animated: true, completion: nil)
+	}
 
 }
