@@ -23,6 +23,13 @@ class TableViewController: UITableViewController, UINavigationControllerDelegate
 	
 	// MARK: - Table view delegate
 	
+	override func tableView(tableView: UITableView, shouldHighlightRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+		if (indexPath.section == 0) {
+			return false
+		}
+		return true
+	}
+	
 	override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 		if (indexPath.section == 3) {
 			var url: NSString;
@@ -81,6 +88,9 @@ class TableViewController: UITableViewController, UINavigationControllerDelegate
     // MARK: - Navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 		if (segue.identifier!.isEqual("visitWebsiteSeue")) {
+			
+		}
+		if (segue.identifier!.isEqual("notificationsSegue")) {
 			
 		}
     }

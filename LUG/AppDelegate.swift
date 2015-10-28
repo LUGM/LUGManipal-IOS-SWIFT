@@ -54,7 +54,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		UINavigationBar.appearance().barTintColor = AppDelegate.globalBackColor();
 		UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: AppDelegate.globalTintColor()];
 		
+		// Install initial versions of our two dynamic shortcuts.
+		if #available(iOS 9.0, *) {
+		    if let shortcutItems = application.shortcutItems where shortcutItems.isEmpty {
+    			// Construct the items.
+    			let shortcut1 = UIMutableApplicationShortcutItem(type: "com.lugmanipal.LUG.Notifications", localizedTitle: "Notifications", localizedSubtitle: nil, icon: UIApplicationShortcutIcon.init(templateImageName: "notifications"), userInfo: nil
+    			)
+    			
+    			let shortcut2 = UIMutableApplicationShortcutItem(type: "com.lugmanipal.LUG.Website", localizedTitle: "Website", localizedSubtitle: nil, icon: UIApplicationShortcutIcon.init(templateImageName: "website"), userInfo: nil
+    			)
+    			
+    			// Update the application providing the initial 'dynamic' shortcut items.
+    			application.shortcutItems = [shortcut1, shortcut2]
+    		}
+		} else {
+		    // Fallback on earlier versions
+		}
+
+		
 		return true
+	}
+	
+	@available(iOS 9.0, *)
+	func application(application: UIApplication, performActionForShortcutItem shortcutItem: UIApplicationShortcutItem, completionHandler: (Bool) -> Void) {
+		let rootNavigationViewController = window!.rootViewController as? UINavigationController
+		let rootViewController = rootNavigationViewController?.viewControllers.first as! TableViewController?
+		rootNavigationViewController?.popToRootViewControllerAnimated(false)
+		if (shortcutItem.type.containsString("Notifications")) {
+			rootViewController?.performSegueWithIdentifier("notificationsSegue", sender: nil)
+		}
+		if (shortcutItem.type.containsString("Website")) {
+			rootViewController?.performSegueWithIdentifier("visitWebsiteSeue", sender: nil)
+		}
 	}
 	
 	func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
