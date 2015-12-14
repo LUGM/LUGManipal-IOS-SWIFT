@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		591966301BCFE20D0088FA04 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919662F1BCFE20D0088FA04 /* WebViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		591966301BCFE20D0088FA04 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919662F1BCFE20D0088FA04 /* WebViewController.swift */; };
+		59AEAA5D1C1F1946007F351A /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AEAA5C1C1F1946007F351A /* AboutTableViewController.swift */; };
 		59C721801BCD5BE000CFFD9C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C7217F1BCD5BE000CFFD9C /* AudioToolbox.framework */; };
 		59C721821BCD5BEA00CFFD9C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C721811BCD5BEA00CFFD9C /* CFNetwork.framework */; };
 		59C721841BCD5BF500CFFD9C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C721831BCD5BF500CFFD9C /* CoreGraphics.framework */; };
@@ -19,12 +20,12 @@
 		59C721901BCD5C2F00CFFD9C /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C7218F1BCD5C2F00CFFD9C /* Accounts.framework */; };
 		59C721921BCD5C4400CFFD9C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C721911BCD5C4400CFFD9C /* libz.tbd */; };
 		59C721941BCD5C4E00CFFD9C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C721931BCD5C4E00CFFD9C /* libsqlite3.tbd */; };
-		59C721981BCD5D4E00CFFD9C /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C721961BCD5D4E00CFFD9C /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
-		59C721991BCD5D4E00CFFD9C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C721971BCD5D4E00CFFD9C /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
-		59CE05E31BD2054900F5FDA5 /* NotificationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CE05E21BD2054900F5FDA5 /* NotificationsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		59CE05E51BD2086E00F5FDA5 /* SwiftNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CE05E41BD2086E00F5FDA5 /* SwiftNotice.swift */; settings = {ASSET_TAGS = (); }; };
-		59F29FE61BCEC46E0037591F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F29FE51BCEC46E0037591F /* TableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		59F29FE81BCEC97A0037591F /* floyd.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 59F29FE71BCEC97A0037591F /* floyd.TTF */; settings = {ASSET_TAGS = (); }; };
+		59C721981BCD5D4E00CFFD9C /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C721961BCD5D4E00CFFD9C /* Bolts.framework */; };
+		59C721991BCD5D4E00CFFD9C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C721971BCD5D4E00CFFD9C /* Parse.framework */; };
+		59CE05E31BD2054900F5FDA5 /* NotificationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CE05E21BD2054900F5FDA5 /* NotificationsTableViewController.swift */; };
+		59CE05E51BD2086E00F5FDA5 /* SwiftNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CE05E41BD2086E00F5FDA5 /* SwiftNotice.swift */; };
+		59F29FE61BCEC46E0037591F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F29FE51BCEC46E0037591F /* TableViewController.swift */; };
+		59F29FE81BCEC97A0037591F /* floyd.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 59F29FE71BCEC97A0037591F /* floyd.TTF */; };
 		59F423441BCCDC1A00C2A56F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F423431BCCDC1A00C2A56F /* AppDelegate.swift */; };
 		59F423491BCCDC1A00C2A56F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59F423471BCCDC1A00C2A56F /* Main.storyboard */; };
 		59F4234C1BCCDC1A00C2A56F /* LUG.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 59F4234A1BCCDC1A00C2A56F /* LUG.xcdatamodeld */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		5919662F1BCFE20D0088FA04 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		59AEAA5C1C1F1946007F351A /* AboutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutTableViewController.swift; sourceTree = "<group>"; };
 		59C7217F1BCD5BE000CFFD9C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		59C721811BCD5BEA00CFFD9C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		59C721831BCD5BF500CFFD9C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -157,6 +159,7 @@
 				59F29FE51BCEC46E0037591F /* TableViewController.swift */,
 				5919662F1BCFE20D0088FA04 /* WebViewController.swift */,
 				59CE05E21BD2054900F5FDA5 /* NotificationsTableViewController.swift */,
+				59AEAA5C1C1F1946007F351A /* AboutTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				59F29FE61BCEC46E0037591F /* TableViewController.swift in Sources */,
 				59CE05E31BD2054900F5FDA5 /* NotificationsTableViewController.swift in Sources */,
 				59F423441BCCDC1A00C2A56F /* AppDelegate.swift in Sources */,
+				59AEAA5D1C1F1946007F351A /* AboutTableViewController.swift in Sources */,
 				59CE05E51BD2086E00F5FDA5 /* SwiftNotice.swift in Sources */,
 				591966301BCFE20D0088FA04 /* WebViewController.swift in Sources */,
 			);
@@ -366,6 +370,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEPLOYMENT_POSTPROCESSING = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -382,6 +387,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEPLOYMENT_POSTPROCESSING = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

@@ -47,6 +47,10 @@ class TableViewController: UITableViewController, UINavigationControllerDelegate
 					url = NSString(string: "http://twitter.com/LUGManipal")
 					title = NSString(string: "Twitter Page")
 				break
+				case 3:
+					url = NSString(string: "https://github.com/LUGM")
+					title = NSString(string: "Official LUGM Github")
+				break
 				default:
 					url = NSString(string: "http://www.lugmanipal.org")
 					title = NSString(string: "Website")
@@ -58,23 +62,23 @@ class TableViewController: UITableViewController, UINavigationControllerDelegate
 			wvc.passedURL = url
 			self.navigationController?.pushViewController(wvc, animated: true)
 		}
-		if (indexPath.section == 4) {
+		else if (indexPath.section == 4) {
 			if (indexPath.row == 0) {
-				// Core committee
-			}
-			if (indexPath.row == 1) {
 				// Mailing list
 				if (MFMailComposeViewController.canSendMail()) {
 					let mailVC : MFMailComposeViewController = MFMailComposeViewController()
 					mailVC.mailComposeDelegate = self
 					mailVC.setSubject("To LUG Manipal")
 					mailVC.setToRecipients(["discussion@lists.lugmanipal.org"])
-					mailVC.setMessageBody("\n\nLinux is Love, Linux is Life. (Unless you have a Mac, in that case, screw Linux.)\n\n", isHTML: false)
+					mailVC.setMessageBody("\n\nLinux is Love, Linux is Life. (Throw that Windows out of the window.)\n\n", isHTML: false)
 					mailVC.modalPresentationStyle = .PageSheet
 					self.presentViewController(mailVC, animated: true, completion: { () -> Void in
 						
 					});
 				}
+			}
+			else if (indexPath.row == 1) {
+				// About
 			}
 		}
 		tableView.deselectRowAtIndexPath(indexPath, animated: true)
