@@ -9,18 +9,18 @@
 /* Begin PBXBuildFile section */
 		591966301BCFE20D0088FA04 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919662F1BCFE20D0088FA04 /* WebViewController.swift */; };
 		59AEAA5D1C1F1946007F351A /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AEAA5C1C1F1946007F351A /* AboutTableViewController.swift */; };
-		59C721801BCD5BE000CFFD9C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C7217F1BCD5BE000CFFD9C /* AudioToolbox.framework */; };
-		59C721821BCD5BEA00CFFD9C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C721811BCD5BEA00CFFD9C /* CFNetwork.framework */; };
-		59C721841BCD5BF500CFFD9C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C721831BCD5BF500CFFD9C /* CoreGraphics.framework */; };
-		59C721861BCD5BFE00CFFD9C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C721851BCD5BFE00CFFD9C /* CoreLocation.framework */; };
-		59C721881BCD5C0900CFFD9C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C721871BCD5C0900CFFD9C /* QuartzCore.framework */; };
-		59C7218A1BCD5C1000CFFD9C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C721891BCD5C1000CFFD9C /* Security.framework */; };
-		59C7218C1BCD5C1B00CFFD9C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C7218B1BCD5C1B00CFFD9C /* StoreKit.framework */; };
-		59C7218E1BCD5C2400CFFD9C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C7218D1BCD5C2400CFFD9C /* SystemConfiguration.framework */; };
-		59C721901BCD5C2F00CFFD9C /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C7218F1BCD5C2F00CFFD9C /* Accounts.framework */; };
-		59C721921BCD5C4400CFFD9C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C721911BCD5C4400CFFD9C /* libz.tbd */; };
-		59C721941BCD5C4E00CFFD9C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C721931BCD5C4E00CFFD9C /* libsqlite3.tbd */; };
-		59C721981BCD5D4E00CFFD9C /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C721961BCD5D4E00CFFD9C /* Bolts.framework */; };
+		59C721801BCD5BE000CFFD9C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C7217F1BCD5BE000CFFD9C /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		59C721821BCD5BEA00CFFD9C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C721811BCD5BEA00CFFD9C /* CFNetwork.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		59C721841BCD5BF500CFFD9C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C721831BCD5BF500CFFD9C /* CoreGraphics.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		59C721861BCD5BFE00CFFD9C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C721851BCD5BFE00CFFD9C /* CoreLocation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		59C721881BCD5C0900CFFD9C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C721871BCD5C0900CFFD9C /* QuartzCore.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		59C7218A1BCD5C1000CFFD9C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C721891BCD5C1000CFFD9C /* Security.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		59C7218C1BCD5C1B00CFFD9C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C7218B1BCD5C1B00CFFD9C /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		59C7218E1BCD5C2400CFFD9C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C7218D1BCD5C2400CFFD9C /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		59C721901BCD5C2F00CFFD9C /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C7218F1BCD5C2F00CFFD9C /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		59C721921BCD5C4400CFFD9C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C721911BCD5C4400CFFD9C /* libz.tbd */; settings = {ATTRIBUTES = (Weak, ); }; };
+		59C721941BCD5C4E00CFFD9C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C721931BCD5C4E00CFFD9C /* libsqlite3.tbd */; settings = {ATTRIBUTES = (Weak, ); }; };
+		59C721981BCD5D4E00CFFD9C /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C721961BCD5D4E00CFFD9C /* Bolts.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		59C721991BCD5D4E00CFFD9C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C721971BCD5D4E00CFFD9C /* Parse.framework */; };
 		59CE05E31BD2054900F5FDA5 /* NotificationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CE05E21BD2054900F5FDA5 /* NotificationsTableViewController.swift */; };
 		59CE05E51BD2086E00F5FDA5 /* SwiftNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CE05E41BD2086E00F5FDA5 /* SwiftNotice.swift */; };
@@ -380,6 +380,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lugmanipal.LUG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Debug;
 		};
@@ -397,6 +398,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lugmanipal.LUG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Release;
 		};
