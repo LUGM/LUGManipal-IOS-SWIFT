@@ -1,6 +1,6 @@
 # Contribution
 
-Open an [issue](https://github.com/LUGM/LUGMNotifier/issues) in order to file a bug or suggest a new feature
+Open an [issue](https://github.com/LUGM/LUGManipal-IOS-SWIFT/issues) in order to file a bug or suggest a new feature
 
 If you want to close an issue:
 
@@ -9,7 +9,7 @@ If you want to close an issue:
 3. Work on it
 4. Send a pull request
 
-We'll be follwing this routine. Try not to send a pull request from and to master. We are on [![Join the chat at https://gitter.im/LUGM/LUGMNotifier](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/LUGM/LUGMNotifier)
+We'll be follwing this routine. Try not to send a pull request from and to master.
 
 A few simple rules that have to be followed:
 
