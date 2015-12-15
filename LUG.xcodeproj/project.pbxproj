@@ -20,8 +20,6 @@
 		59C721901BCD5C2F00CFFD9C /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C7218F1BCD5C2F00CFFD9C /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		59C721921BCD5C4400CFFD9C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C721911BCD5C4400CFFD9C /* libz.tbd */; settings = {ATTRIBUTES = (Weak, ); }; };
 		59C721941BCD5C4E00CFFD9C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C721931BCD5C4E00CFFD9C /* libsqlite3.tbd */; settings = {ATTRIBUTES = (Weak, ); }; };
-		59C721981BCD5D4E00CFFD9C /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C721961BCD5D4E00CFFD9C /* Bolts.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		59C721991BCD5D4E00CFFD9C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C721971BCD5D4E00CFFD9C /* Parse.framework */; };
 		59CE05E31BD2054900F5FDA5 /* NotificationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CE05E21BD2054900F5FDA5 /* NotificationsTableViewController.swift */; };
 		59CE05E51BD2086E00F5FDA5 /* SwiftNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CE05E41BD2086E00F5FDA5 /* SwiftNotice.swift */; };
 		59F29FE61BCEC46E0037591F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F29FE51BCEC46E0037591F /* TableViewController.swift */; };
@@ -31,6 +29,8 @@
 		59F4234C1BCCDC1A00C2A56F /* LUG.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 59F4234A1BCCDC1A00C2A56F /* LUG.xcdatamodeld */; };
 		59F4234E1BCCDC1A00C2A56F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59F4234D1BCCDC1A00C2A56F /* Assets.xcassets */; };
 		59F423511BCCDC1A00C2A56F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59F4234F1BCCDC1A00C2A56F /* LaunchScreen.storyboard */; };
+		A388B42E1C1FD78F004D9964 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A388B42C1C1FD78F004D9964 /* Bolts.framework */; };
+		A388B42F1C1FD78F004D9964 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A388B42D1C1FD78F004D9964 /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,8 +47,6 @@
 		59C7218F1BCD5C2F00CFFD9C /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		59C721911BCD5C4400CFFD9C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		59C721931BCD5C4E00CFFD9C /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		59C721961BCD5D4E00CFFD9C /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		59C721971BCD5D4E00CFFD9C /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		59CE05E21BD2054900F5FDA5 /* NotificationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsTableViewController.swift; sourceTree = "<group>"; };
 		59CE05E41BD2086E00F5FDA5 /* SwiftNotice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftNotice.swift; sourceTree = "<group>"; };
 		59F29FE51BCEC46E0037591F /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +58,8 @@
 		59F4234D1BCCDC1A00C2A56F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59F423501BCCDC1A00C2A56F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59F423521BCCDC1A00C2A56F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A388B42C1C1FD78F004D9964 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = LUG/Bolts.framework; sourceTree = "<group>"; };
+		A388B42D1C1FD78F004D9964 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = LUG/Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,10 +70,10 @@
 				59C721941BCD5C4E00CFFD9C /* libsqlite3.tbd in Frameworks */,
 				59C721921BCD5C4400CFFD9C /* libz.tbd in Frameworks */,
 				59C721901BCD5C2F00CFFD9C /* Accounts.framework in Frameworks */,
-				59C721981BCD5D4E00CFFD9C /* Bolts.framework in Frameworks */,
+				A388B42E1C1FD78F004D9964 /* Bolts.framework in Frameworks */,
 				59C7218E1BCD5C2400CFFD9C /* SystemConfiguration.framework in Frameworks */,
 				59C7218C1BCD5C1B00CFFD9C /* StoreKit.framework in Frameworks */,
-				59C721991BCD5D4E00CFFD9C /* Parse.framework in Frameworks */,
+				A388B42F1C1FD78F004D9964 /* Parse.framework in Frameworks */,
 				59C7218A1BCD5C1000CFFD9C /* Security.framework in Frameworks */,
 				59C721881BCD5C0900CFFD9C /* QuartzCore.framework in Frameworks */,
 				59C721861BCD5BFE00CFFD9C /* CoreLocation.framework in Frameworks */,
@@ -89,8 +89,8 @@
 		59C721951BCD5C5900CFFD9C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				59C721961BCD5D4E00CFFD9C /* Bolts.framework */,
-				59C721971BCD5D4E00CFFD9C /* Parse.framework */,
+				A388B42C1C1FD78F004D9964 /* Bolts.framework */,
+				A388B42D1C1FD78F004D9964 /* Parse.framework */,
 				59C721931BCD5C4E00CFFD9C /* libsqlite3.tbd */,
 				59C721911BCD5C4400CFFD9C /* libz.tbd */,
 				59C7218F1BCD5C2F00CFFD9C /* Accounts.framework */,
@@ -374,6 +374,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/LUG",
 				);
 				INFOPLIST_FILE = LUG/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -392,6 +393,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/LUG",
 				);
 				INFOPLIST_FILE = LUG/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

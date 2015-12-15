@@ -20,8 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		
 //		Parse.enableLocalDatastore()
 		
-		Parse.setApplicationId("wPBqAPFLBuSms7zJ5z3d3xWjV5VBMCXQNwpBaJRO", clientKey: "4GjHWzJlDMNp8s2yvP8U5PCjkhVNIMrV6QfI8S1O")
-		
+        //To get client key and secret message us at https://www.facebook.com/LUGManipal/
+		Parse.setApplicationId("", clientKey: "")
+        
 		// Register for Push Notitications
 		if application.applicationState != UIApplicationState.Background {
 			// Track an app open here if we launch with a push, unless
